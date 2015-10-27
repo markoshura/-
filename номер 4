@@ -1,0 +1,10 @@
+from decimal import Decimal,  getcontext
+getcontext().prec = 4
+
+x=0.15
+S=6000000
+y=15
+N=12*y
+z=S*(x/12+(x/12)/((1+x/12)**N-1))
+print(Decimal(z)/1)
+print (Decimal(z*y*12)-Decimal(S))
