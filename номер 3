@@ -1,0 +1,8 @@
+def f(y,z):
+    return 108 - (815-1500/z)/y
+import numpy as np
+import matplotlib.pyplot as plt
+x=np.arange(1,200.01,0.01)
+plt.plot(x,(f(x,x)-x))
+plt.grid(True)
+plt.show()
